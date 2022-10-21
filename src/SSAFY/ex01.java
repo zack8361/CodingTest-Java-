@@ -10,7 +10,6 @@ public class ex01 {
         int num = kong.nextInt();
 
         int[] Array = new int[10];
-
         for(int i=0; i<num; i++){
             int sum =0;
             for(int j=0; j<Array.length; j++){
@@ -18,7 +17,12 @@ public class ex01 {
                 if(number%2 ==1){
                     sum += number;
                 }
+                Array[i] = sum;
             }
+        }
+
+        for(int i=0; i<Array.length; i++){//배열 위엣껄로 교체 ㅋㅋ
+            System.out.println(Array[i]);
         }
 
     }
