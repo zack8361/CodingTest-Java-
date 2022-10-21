@@ -1,16 +1,21 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ex05 {
     public static void main(String[] args) {
-        Scanner kong = new Scanner(System.in);
+        Scanner kong= new Scanner(System.in);
         int num = kong.nextInt();
-        int[] Array = new int[num+1];
-
-        for(int i=0; i<Array.length; i++){
-            int number = Integer.parseInt(kong.nextLine());
-
+        for(int i=0; i<num; i++) {
+            int student = kong.nextInt();
+            int[] Array = new int[student];
+            double sum =0;
+            for (int j = 0; j < Array.length; j++) {
+                int grade = kong.nextInt();
+                sum += grade;
+            }
         }
+
     }
 }
