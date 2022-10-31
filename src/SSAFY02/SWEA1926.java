@@ -1,6 +1,7 @@
 package SSAFY02;
 
 import java.util.Scanner;
+//3-6-9 알고리즘
 public class SWEA1926 {
     public static void main(String[] args) {
 
