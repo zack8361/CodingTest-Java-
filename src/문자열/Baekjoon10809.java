@@ -12,6 +12,7 @@ public class Baekjoon10809 {
         for(char i = 'a'; i<'z'; i++){
             System.out.println(word.indexOf(i) + " ");
 
+
         }
     }
 }
