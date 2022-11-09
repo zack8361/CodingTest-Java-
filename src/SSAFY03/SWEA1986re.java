@@ -13,7 +13,7 @@ public class SWEA1986re {
             int odd =0;
             int add =0;
 
-            for(int j=0; j<num; j++){
+            for(int j=0; j<=num; j++){
                 if(j%2==0){
                     odd+=j;
                 }
@@ -21,7 +21,7 @@ public class SWEA1986re {
                     add+=j;
                 }
             }
-            System.out.println(add-odd);
+            System.out.println(odd-add);
         }
     }
 }

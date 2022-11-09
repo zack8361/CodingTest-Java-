@@ -24,5 +24,7 @@ public class SWEA1986 {
             }
             System.out.println(a-b);
         }
+
+
     }
 }
