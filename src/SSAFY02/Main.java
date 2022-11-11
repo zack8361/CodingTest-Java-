@@ -1,35 +1,30 @@
 package SSAFY02;
 
+import java.io.FilterOutputStream;
+import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+    public static void main(String[] args){
 
-        for(int testcase =0; testcase<N; testcase++){
-            int num = sc.nextInt();
-            int[][] A = new int[num][num];
-            int num2= sc.nextInt();
-            for(int i=0; i<num; i++) {
-                for (int j = 0; j < num; j++) {
-                    A[i][j] = sc.nextInt(); //A배열에 정수 입력
-                }
-            }
-            int max =0;
-            // 패턴 만큼 탐색 한다
-            for(int a=0; a<num-num2+1; a++){
-                for(int b=0; b<num-num2+1; b++){
-                    int sum =0;
-                    //2 x 2만큼
-                    for(int c=0; c<num2; c++) {
-                        for (int d = 0; d < num2; d++) {
-                            sum += A[a + c][b + d];
-                        }
-                    }
-                    max = Math.max(max,sum);
-                }
-            }
-            System.out.println(max);
-        }
+        Solution s = new Solution();
+        int score[] = {2,3,2,3,1,1,1};
+        int k = 3; // 최대값
+        int m = 4; //박스당 들어가는 사과의 수
+        System.out.println(s.Solution(k,m,score));
     }
 }
+
+
+class Solution{
+
+    public int Solution(int k, int m, int[] score){
+        Arrays.sort(score); //배열 오름 차순으로 정렬하고
+        int answer = 0;
+        for(int i=score.length; i>=m; i-=m){
+            answer += score[i-m]*m;
+        }
+        return answer;
+    }
+}
+
+
