@@ -7,26 +7,23 @@ import java.util.Scanner;
 
 public class SWEA1983 {
     public static void main(String[] args) {
+        String[] grade = {"A+","A","A-","B+","B","B-","C+","C","C-","D"};
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int[] arr;
-        for(int tc=0; tc<N; tc++){
-            int num = sc.nextInt();
-            int num2 = sc.nextInt();
+        int T = sc.nextInt();
+        for(int tc =0; tc<T; tc++){
+            int N = sc.nextInt(); //사람수
+            int K = sc.nextInt(); //선택할 K
 
-            for(int i=0; i<num; i++){
-                arr = new int[3];
+            double arr[] = new double[N];
+            int cnt =0;
 
-                int sum = 0;
-                for(int j=0; j<arr.length; j++){
-                    arr[j] = sc.nextInt();
-                    sum+= arr[j];
-                }
-                int[] arr2 = new int[sum];
-                Arrays.sort(arr2);
-                System.out.println(sum);
+            for(int i=0; i<N; i++){
+                int A = sc.nextInt();
+                int B = sc.nextInt();
+                int C = sc.nextInt();
+
+                arr[i] = A * 0.35 + B *0.45 + C *0.2;
             }
-
         }
     }
 }
