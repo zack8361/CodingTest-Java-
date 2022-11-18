@@ -44,6 +44,8 @@ public class SWEA1974 {
                 }
             }
 
+
+
             if(sign == true){
                 System.out.println("1");
             }

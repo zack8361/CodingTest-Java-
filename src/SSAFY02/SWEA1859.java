@@ -19,17 +19,18 @@ public class SWEA1859 {
 
             int max = 0;
             long sum = 0;
+            int np =0;
             for (int i = N-1; i >=0; i--) {
                 if (max < arr[i]) { //최대값인 경우
                     max = arr[i];
                 }
                 else {
-                    int np = max - arr[i];
+                    np = max - arr[i];
                     sum += np;
                 }
             }
-            System.out.println("#" +test_case+" "+sum);
 
+            System.out.println("#" +test_case+" "+sum);
         }
     }
 }

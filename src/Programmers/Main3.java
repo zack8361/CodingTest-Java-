@@ -4,11 +4,18 @@ import java.util.Arrays;
 
 public class Main3 {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,1,2,3,1};
+        Solutions s = new Solutions();
+        System.out.println(s.solution(5,3,2));
 
-        Arrays.sort(arr);
-        for(int i=0; i<2; i++){
-            System.out.println(arr[i+1]);
-        }
+    }
+}
+class Solutions{
+    public int solution(int number, int limit, int power) {
+        int answer = 0;
+        int count = 0;
+
+        int sum =0;
+        return answer;
+
     }
 }
