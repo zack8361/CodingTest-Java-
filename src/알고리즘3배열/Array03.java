@@ -6,12 +6,18 @@ import java.util.Scanner;
 public class Array03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
 
         int count =0;
-        for(int i=0; i<N; i++){
-            for(int j=0; j<N; j++){
-                
+        for(int i=2; i<1000; i++){
+            int j;
+            for(j=2; j<i; j++){
+                count++;
+                if(i%j  == 0){
+                    break;
+                }
+            }
+            if(i == j){
+                System.out.println(i);
             }
         }
         System.out.println(count);
