@@ -24,11 +24,18 @@ public class binEx01 {
             int mid = (low+high)/2;
             long sum =0;
             for(int i=0; i<N; i++){
-                if(arr[i] == mid){
-                    sum+=
+                if(arr[i] > mid){
+                    sum+=arr[i] - mid;
                 }
             }
+            if(M<=sum){
+                low = mid +1;
+            }
+            else {
+                high = mid -1;
+            }
         }
+        System.out.println(high);
 
     }
 }
