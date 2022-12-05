@@ -1,4 +1,4 @@
-package 알고리즘4탐색;
+package 알고리즘4이분탐색;
 
 import java.util.Scanner;
 

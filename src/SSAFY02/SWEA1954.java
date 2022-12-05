@@ -41,6 +41,5 @@ public class SWEA1954 {
                 System.out.println();
             }
         }
-
     }
 }
