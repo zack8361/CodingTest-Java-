@@ -19,8 +19,8 @@ public class ex2775 { //BufferReader 를 사용하기 위해서는 throws IOExce
             sb.append(arr[a][b]).append('\n');
         }
         System.out.println(sb);
-
     }
+
 
     private static void make_APT() {
         for(int i=0; i<15; i++){

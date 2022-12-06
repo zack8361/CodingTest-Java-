@@ -1,18 +1,19 @@
-package BaekJoonBronze1;
+package 알고리즘6재귀;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class ex2309 {
+public class exMain2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int[] arr = new int[9];
-
-        for(int i=0; i<9; i++){
-            arr[i] = Integer.parseInt(br.readLine());
+        String[] s = br.readLine().split("-");
+        for(int i=0; i<s.length; i++){
+            if(s[i].contains("+")){
+                1
+            }
         }
-
-
     }
 }
