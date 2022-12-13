@@ -12,7 +12,7 @@ public class exMain2 {
         String[] s = br.readLine().split("-");
         for(int i=0; i<s.length; i++){
             if(s[i].contains("+")){
-                1
+
             }
         }
     }
