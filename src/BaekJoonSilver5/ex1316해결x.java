@@ -19,8 +19,9 @@ public class ex1316해결x {
             }
         }
         System.out.println(count);
-
     }
+    
+
 
     private static boolean check() throws IOException {
         boolean[] check = new boolean[26]; //알파벳 개수가 26개 기 때문
