@@ -14,13 +14,6 @@ public class n2ArrayCut{
        int[] answer = new int[(int) (right-left)+1];
         System.out.println(answer.length);
 
-        for(int i=0; i<answer.length; i++) {
-            int row =
-
-
-
-        }
-
         return answer;
     }
 }
