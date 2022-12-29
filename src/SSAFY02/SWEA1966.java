@@ -22,6 +22,7 @@ public class SWEA1966 {
             Arrays.sort(arr);
             for(int k=0; k<arr.length; k++){
                 System.out.print(arr[k] + " ");
+
             }
         }
     }
