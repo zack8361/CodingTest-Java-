@@ -1,29 +1,42 @@
 package 인프런1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ex03 {
     public static void main(String[] args) {
-        Main T = new Main();
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        System.out.println(T.solution(str));
-    }
-
-    private static class Main {
-        public String solution(String str) {
-            String answer = " ";
-            String[] s =  str.split(" "); //배열에 쪼개서 담아라.
-            int min = -1;
-            for(String x: s){
-                int len = x.length();
-                if(len>min){
-                    min = len;
-                    answer = x;
-                }
-            }
-            return answer;
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+        int[] arr2 = new int[N];
+        for(int i=0; i<N; i++){
+            arr[i] = sc.nextInt();
         }
+        for(int i=0; i<N; i++){
+            arr2[i] = sc.nextInt();
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<N; i++){
+            if(arr[i] == arr2[i]){
+                sb.append("D");
+            }
+            else if(arr[i] ==1 &&arr2[i]==3){
+                sb.append("A").append('\n');
+            }
+            else if(arr[i] ==2 &&arr2[i] ==1){
+                sb.append("A").append('\n');
+            }
+            else if(arr[i] ==3 && arr2[i] ==2){
+                sb.append("A").append('\n');
+            }
+            else if(arr[i] ==3 &&arr2[i] ==1){
+                sb.append("B").append('\n');
+            }
+            else if(arr[i] ==1 && arr2[i] ==2){
+                sb.append("B").append('\n');
+            }
+
+        }
+        System.out.println(sb);
+
     }
 }

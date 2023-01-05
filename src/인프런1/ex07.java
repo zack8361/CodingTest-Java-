@@ -2,7 +2,7 @@ package 인프런1;
 
 import java.util.Scanner;
 
-public class ex02 {
+public class ex07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -10,15 +10,18 @@ public class ex02 {
         for(int i=0; i<N; i++){
             arr[i] = sc.nextInt();
         }
-        int count = 1;
-        int max = arr[0];
-        for(int i=1; i<N; i++){
-            if(max<arr[i]){
-                max = arr[i];
-                count++;
-            }
 
+        int result = 0;
+        int count = 0;
+        for(int i=0; i<N; i++){
+            if(arr[i] ==1){
+                count++;
+                result+=count;
+            }
+            else {
+                count = 0;
+            }
         }
-        System.out.println(count);
+        System.out.println(result);
     }
 }
