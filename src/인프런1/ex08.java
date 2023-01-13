@@ -19,7 +19,7 @@ public class ex08 {
                     cnt++;
                 }
             }
-            System.out.println(cnt);
+            System.out.print(cnt + " ");
         }
     }
 }
