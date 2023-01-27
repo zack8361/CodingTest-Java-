@@ -10,7 +10,7 @@ public class Programmers150368 {
     private static int[] solution(int[][] users, int[] emoticons) {
 
         int[] answer = {};
-
+        String s = "123";
         return answer;
     }
 }
