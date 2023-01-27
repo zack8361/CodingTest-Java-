@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        function submitjava(){
+            //div의 id 명을 받아서 Html 안에 있는 값을 반갑습니다로 변경.
+            //doument  = html 요소에 접근하고자 할때 사용되는 키워드.
+            document.getElementById("div1").innerHTML = "반갑습니다.";
+        }
+
+        function submitjquery(){
+            //Id = #으로 접근
+            //class = .으로 접근
+            $("#div1").html("잘지내세요").css("border","3px dotted blue");
+        }
+    </script>
+</head>
+
+<body>
+<div id = "div1">
+    안녕하세요.
+</div>
+    <button type = "button" onclick="submitjava();"> 변환 1</button>
+    <button type = "button" onclick="submitjquery();"> 변환 2</button>
+</body>
+</html>

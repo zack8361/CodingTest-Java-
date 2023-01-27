@@ -1,24 +1,22 @@
+<!--자바 스크립트 alert 띄우기-->
+<!--자바스크립트 다이얼로그 : 프롬프트 다이얼로그-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>기본 구조를 가진 표</title>
+    <meta charset="UTF-8">
+    <title>URL에 자바스크립트 작성</title>
 </head>
 <body>
-<table border ="1">
-  <thead>
-  <tr><th>이름</th><th>HTMl</th><th>CSS</th></tr>
-  </thead>
-  <tbody>
-  <tr><td>황기태</td><td>80</td><td>70</td></tr>
-  <tr><td>이용준</td><td>80</td><td>70</td></tr>
-  <tr><td>이찬호</td><td>80</td><td>70</td></tr>
-  </tbody>
-  <tfoot>
-  <tr><td>합</td><td>225</td><td>230</td></tr>
-  </tfoot>
-</table>
+<h3>링크의 href에 자바스크립트 작성</h3>
+<hr>
+<a href="javascript:alert('클릭하셨습니까??')">
+    여기눌러바요
+</a>
+<br>
 
-
+<script>
+    var name = prompt("이름을 입력하세요");
+    document.write(name);
+</script>
 </body>
 </html>

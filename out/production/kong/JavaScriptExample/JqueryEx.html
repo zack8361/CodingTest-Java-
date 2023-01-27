@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    for(var i =4; i<100; i++){
+      function submitjava(){
+        $('#mytable>tbody>tr').append('<td>i</td>');
+      }
+    }
+  </script>
+</head>
+
+<body>
+<table id ="mytable" border="1">
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  </tbody>
+</table>
+<button type="button" onclick="submitjava();">클릭</button>
+</body>
+</html>
